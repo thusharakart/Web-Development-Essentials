@@ -14,3 +14,6 @@ def add(request):
 
     ans = int(val1) + int(val2)
     return render(request, "result.html", {'ans': ans})
+
+def Error404(request):
+    return render(request, '404.html', status=404)
