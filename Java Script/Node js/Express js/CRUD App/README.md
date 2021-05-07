@@ -1,6 +1,6 @@
 ### This is a basic crud app using express and mongodb
 
-Open the terminal
+Open the terminal(Ubuntu)
 
 > npm init
 
@@ -36,6 +36,18 @@ Change the following in index.js to achieve that.
 > "scripts": {
     "start": "nodemon app.js"
   }
+
+Also, to use PATCH / PUT, DELETE install postman 
+
+> sudo snap install postman
+
+To install mongodb server if you don't have installed it.
+
+> sudo apt install mongodb-server-core
+
+
+
+
 
 
 
