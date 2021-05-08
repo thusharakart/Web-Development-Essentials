@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const url = 'mongodb://localhost/ExpressCRUDdb';
 const app = express();
 
-mongoose.connect(url, { useNewUrlParser: true });
+mongoose.connect(url, { useUnifiedTopology: true, useNewUrlParser: true });
 
 const con = mongoose.connection;
 
@@ -18,6 +18,9 @@ const con = mongoose.connection;
 con.on('open', () => {
     console.log("connected .. ");
 });
+
+// add a middleware to use json in the post req. body
+app.use(express.json());
 
 const studentRouter = require('./routes/students');
 app.use('/students', studentRouter);
