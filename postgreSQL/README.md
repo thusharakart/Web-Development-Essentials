@@ -13,3 +13,5 @@ Setup for windows
     > \c databasename
 8. To check the table description
     > \d tablename
+9. To grant all privileges
+    > GRANT ALL PRIVILEGES ON DATABASE "databasename" To username;
