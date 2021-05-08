@@ -6,7 +6,7 @@ Setup for windows
 4. To view the list of databases 
     > \l
 5. To create a database
-    > CREATE DATABASE databasename
+    > CREATE DATABASE databasename;
 6. To check list of roles
     > \du
 7. To connect to the database
