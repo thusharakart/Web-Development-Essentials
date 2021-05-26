@@ -5,9 +5,13 @@ Setup for windows
 3. enter passward
 4. To view the list of databases 
     > \l
-5. To check list of roles
+5. To create a database
+    > CREATE DATABASE databasename;
+6. To check list of roles
     > \du
-6. To connect to the database
+7. To connect to the database
     > \c databasename
-7. To check the table description
+8. To check the table description
     > \d tablename
+9. To grant all privileges
+    > GRANT ALL PRIVILEGES ON DATABASE "databasename" To username;
