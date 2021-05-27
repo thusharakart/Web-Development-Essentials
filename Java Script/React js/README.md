@@ -8,10 +8,10 @@ Or we can specify the version that you need
 
 To create react app
 
-> create-react-app <applicatyion name>
+> create-react-app applicatyion_name
 
 Go to the newly created folder and run the application
 
-> cd <application name>
+> cd application_name
 
 > npm start
