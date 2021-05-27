@@ -13,4 +13,5 @@ To create react app
 Go to the newly created folder and run the application
 
 > cd <application name>
+
 > npm start
