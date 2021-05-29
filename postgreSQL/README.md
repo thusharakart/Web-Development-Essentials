@@ -1,8 +1,8 @@
 Setup for windows
 
 1. open cmd
-2. > psql -U postgres 
-3. enter passward
+2. > psql -U postgres (for ubuntu : psql -U postgres -h localhost -W) 
+3. enter passward (To change the password in ubuntu : sudo -u postgres psql -c "ALTER USER postgres PASSWORD 'new_password';")
 4. To view the list of databases 
     > \l
 5. To create a database
