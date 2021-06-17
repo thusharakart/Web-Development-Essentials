@@ -1,11 +1,12 @@
 import React from "react";
 import "./App.css";
 import { Click } from "./Components/ClassComps/Click";
+import Display from "./Components/FunctionalComps/Display";
 
 function App() {
 	return (
 		<div className="App">
-			<h1>Hello</h1>
+			<Display />
 			<Click />
 		</div>
 	);
