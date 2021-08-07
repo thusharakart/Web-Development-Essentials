@@ -1,5 +1,7 @@
 import React from "react";
 import { GoogleLogin } from "react-google-login";
+// refresh token
+import { refreshTokenSetup } from "../utils/refreshToken";
 
 // YOUR_CLIENT_ID.apps.googleusercontent.com
 const clientId =
@@ -8,6 +10,9 @@ const clientId =
 export default function Login() {
 	const onSuccess = (res) => {
 		console.log("[Login Success] currentUser: ", res.profileObj);
+
+		// initializing the setup
+		refreshTokenSetup(res);
 	};
 
 	const onFailure = (res) => {
@@ -18,7 +23,7 @@ export default function Login() {
 		<div>
 			<GoogleLogin
 				clientId={clientId}
-				buttonText="Login"
+				buttonText="Sign in with Google"
 				onSuccess={onSuccess}
 				onFailure={onFailure}
 				cookiePolicy={"single_host_origin"}

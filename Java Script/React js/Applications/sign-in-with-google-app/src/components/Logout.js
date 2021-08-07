@@ -14,7 +14,7 @@ export default function Logout() {
 		<div>
 			<GoogleLogout
 				clientId={clientId}
-				buttonText="Logout"
+				buttonText="Sign out"
 				onLogoutSuccess={onSuccess}
 			/>
 		</div>
